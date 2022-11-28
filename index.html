@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="image">
+        <div id="logo">
+
+        </div>
+    </div>
+    <div id="container">
+        <p>In the name of the moon, I will right wrong and triumph over evil… and that means you!</p>
+        <form>
+            <div id="form_container">
+                <div>Let's do this!</div>
+                <div class="column">
+                    <div class="name">
+                        <label for="first_name">FIRST NAME</label>
+                    </div>
+                    <input type="text" id="first_name">
+                    
+                    <div class="name">
+                        <label for="last_name">LAST NAME</label>
+                    </div>
+                    <input type="text" id="last_name">
+                </div>
+                <div class="column">
+                    <div class="email_box">
+                        <label for="user_email">EMAIL</label>
+                    </div>
+                    <input type="email" id="user_email">
+                    <div class="phone">
+                        <label for="tel">PHONE NUMBER</label>
+                    </div>
+                        <input type="tel" id="tel" patter="\d{3}[\-]\d{3}[\-]\d{4}">  
+                </div>
+                <div class="column">
+                    <div class="user_password">
+                        <label for="pwd">PASSWORD</label>
+                    </div>
+                    <input type="password" id="pwd" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[!@#$%^&*]+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                    
+                    <div class="user_password">
+                        <label for="confirm_pwd">CONFIRM PASSWORD</label>
+                    </div>
+                    <input type="password" id="confirm_pwd">
+                </div>
+            </div>
+            <div class="btn">
+                <button type="submit">Create Account</button>
+            </div>
+        </form>
+        <div>Already have an account? <a href="">Log in</a></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

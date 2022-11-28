@@ -1,0 +1,39 @@
+
+
+body{
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+
+#image{
+    width: 400px;
+    height: 100vh;
+    background-image: url(../imgs/jake-weirick-dWUPJdXiC-M-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -30px;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+#form_container{
+    background-color: rgb(174, 212, 232);
+    width: 45rem;
+    margin: 0;
+}
+
+
+.column{
+    padding-left: 50px;
+    columns: 2;
+    margin: 0;
+    column-gap: 0px;
+   
+}
+
