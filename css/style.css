@@ -1,14 +1,38 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
 
 body{
     display: flex;
-    padding: 0;
-    margin: 0;
+    background-color: rgb(243, 246, 248);
+    overflow: hidden;
+}
 
+p{
+    margin-left: 50px;
+    word-wrap:break-word;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p:first-of-type{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+p:last-of-type{
+    font-weight:400;
+}
+
+.btn{
+    margin-left: 50px;
+    margin-top: 40px;
 }
 
 #image{
-    width: 400px;
+    width: 40vw;
     height: 100vh;
     background-image: url(../imgs/jake-weirick-dWUPJdXiC-M-unsplash.jpg);
     background-repeat: no-repeat;
@@ -20,20 +44,86 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 40px;
+    
 }
 
 #form_container{
-    background-color: rgb(174, 212, 232);
-    width: 45rem;
-    margin: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    box-shadow: 3px 3px 7px rgb(209, 208, 208) ;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
+input{
+    width: 25vw;
+    height: 25px;
+    border: 1px rgb(222, 222, 222) solid;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+input:focus{
+    box-shadow: 3px 3px 5px rgb(209, 208, 208);
+    outline-width: 0.5px;
+    outline-color: blue;
+    outline-style: solid;
+}
+
+
+
 .column{
-    padding-left: 50px;
-    columns: 2;
-    margin: 0;
-    column-gap: 0px;
-   
+    column-count: 2;
+    column-width: 100px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+    padding-right: 10px;
+    padding-left: 0.5px;
+}
+
+label{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    word-wrap: break-word;
+}
+
+#form_container:first-child{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+#input_container{
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(234, 144, 158);
+}
+
+button{
+    padding: 12px 45px;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    background-color: rgb(234, 144, 158);
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+input:valid{
+    border-color: green;
 }
 

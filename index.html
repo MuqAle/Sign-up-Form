@@ -18,44 +18,46 @@
         <form>
             <div id="form_container">
                 <div>Let's do this!</div>
-                <div class="column">
-                    <div class="name">
-                        <label for="first_name">FIRST NAME</label>
-                    </div>
-                    <input type="text" id="first_name">
+                <div id="input_container">
+                    <div class="column">
+                        <div class="row">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" required>
+                        </div>
                     
-                    <div class="name">
-                        <label for="last_name">LAST NAME</label>
+                        <div class="row">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" required>
+                        </div>
                     </div>
-                    <input type="text" id="last_name">
-                </div>
-                <div class="column">
-                    <div class="email_box">
-                        <label for="user_email">EMAIL</label>
-                    </div>
-                    <input type="email" id="user_email">
-                    <div class="phone">
-                        <label for="tel">PHONE NUMBER</label>
-                    </div>
-                        <input type="tel" id="tel" patter="\d{3}[\-]\d{3}[\-]\d{4}">  
-                </div>
-                <div class="column">
-                    <div class="user_password">
-                        <label for="pwd">PASSWORD</label>
-                    </div>
-                    <input type="password" id="pwd" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[!@#$%^&*]+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
                     
-                    <div class="user_password">
-                        <label for="confirm_pwd">CONFIRM PASSWORD</label>
+                    <div class="column">
+                        <div class="row">
+                            <label for="user_email">EMAIL</label>
+                            <input type="email" id="user_email" required>
+                        </div>
+                        <div class="row">
+                            <label for="tel">PHONE NUMBER</label>
+                            <input type="tel" id="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+                        </div>
                     </div>
-                    <input type="password" id="confirm_pwd">
+                    <div class="column">
+                        <div class="row">
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" id="pwd" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[!@#$%^&*]+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                        </div>
+                        <div class="row">
+                            <label for="confirm_pwd">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_pwd" required>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="btn">
                 <button type="submit">Create Account</button>
             </div>
         </form>
-        <div>Already have an account? <a href="">Log in</a></div>
+        <p>Already have an account? <a href="">Log in</a></p>
     </div>
     <script src="js/script.js"></script>
 </body>
