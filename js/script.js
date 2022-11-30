@@ -20,6 +20,8 @@ function passwordMatch(){
     else{
         pwdMatch.textContent = '';
         submitBtn.disabled = false
+        confirmPwd.style.outline = null
+        password.style.outline =null
     };
 }
 
