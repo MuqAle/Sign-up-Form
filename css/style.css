@@ -64,6 +64,16 @@ img{
     font-weight: 700;
 }
 
+#credit{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
 
 #container{
     display: flex;
@@ -176,7 +186,7 @@ input:valid{
     }
     #image{
         width: 100vw;
-        height: 10rem;
+        height: 13rem;
         margin-bottom: 20px;
     }
     #logo{
